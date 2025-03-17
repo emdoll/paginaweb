@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+body{
+    background-image: url(dalle\ 1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.clogeo {
+    margin-top: 15vh;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+.clogeo h2 {
+    margin-bottom: 20px;
+}
+.clogeo input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.clogeo button {
+    width: 100%;
+    padding: 10px;
+    background: #012a49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.clogeo button:hover {
+    background: #055a97;
+
+}
+#sop{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+footer{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: rgb(224, 231, 245);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.tabla-ejemplo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: solid;
+    background-image: url(dalle\ 2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    padding: 10px 20px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    margin: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: color 0.3s;
+    margin: 15px;
+}
+.menu a:hover {
+    color: #1d1ab8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #012a49;
+    color: white;
+}
+dialog {
+    width: 75%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botformulario {
+    margin: 5px;
+    padding: 10px;
+    width: 25vh;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    border-radius: 5px;
+    border-color:#1d1ab8 ;
+}
+
+.inp, .lab{
+    padding: 5px;
+    width: 25vh;
+    margin-left: 5vh;
+    border-radius: 5px;
+    border-color:#1d1ab8 
+
+}
+

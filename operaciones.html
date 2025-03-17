@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="operaciones">
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a class="botonesb" href="operaciones.html">Operaciones</a></li>
+            <li><a class="botonesb" href="lotes.html">Lotes</a></li>
+            <li><a class="botonesb" href="nominas.html">Nominas</a></li>
+        </ul>
+    </nav>
+
+    <button class="botformulario" onclick="document.getElementById('formDialog').showModal();">Registrar Nueva Operacion</button>
+    <dialog id="formDialog">
+        <h2>Registrar Nueva Operacion</h2>
+        <form method="POST">
+            <label class="lab" for="Op">Nombre de la operacion</label>
+            <input class="inp" type="text" id="Op" name="Op" required>
+
+            <label class="lab" for="Unidades">Unidades por Hora</label>
+            <input class="inp" type="number" id="Unidades" name="Unidades" min="0" required>
+
+            <label class="lab" for="Precio">Precio</label>
+            <input class="inp" type="number" id="Precio" name="Precio" required>
+
+            <label class="lab" for="Check">Operacion de Maquina?</label>
+            <label>
+                <input type="radio" name="Check" value="si" required> Sí
+            </label>
+            <label>
+                <input type="radio" name="Check" value="no" required> No
+            </label>
+
+            <button class="botformulario" type="submit">Guardar Operacion</button>
+        </form>
+        <button class="botformulario" onclick="document.getElementById('formDialog').close();">Cerrar</button>
+    </dialog>
+
+        <div class="tabla-ejemplo">
+            <table> <!-- ejemplos de tabla, mas adelante los valores de anadiran desde una base de datos -->
+                <thead>
+                    <tr>
+                        <th>operacion</th>
+                        <th>precio</th>
+                        <th>U/Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Parchar Trasero</td>
+                        <td>325</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Dobladillar Bols Trasero</td>
+                        <td>85</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Parchar Trasero 1 aguja</td>
+                        <td>225</td>
+                        <td>40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   
+</body>
+</html>

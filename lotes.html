@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="lotes">
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a class="botonesb" href="operaciones.html">Operaciones</a></li>
+            <li><a class="botonesb" href="lotes.html">Lotes</a></li>
+            <li><a class="botonesb" href="nominas.html">Nominas</a></li>
+        </ul>
+    </nav>
+    
+    <button class="botformulario" onclick="document.getElementById('formDialog').showModal();">Registrar Nuevo Lote</button>
+    <dialog id="formDialog">
+        <h2>Registro de Lote</h2>
+        <form method="POST">
+            <label class="lab" for="referencia">Referencia del Lote:</label>
+            <input class="inp" type="text" id="referencia" name="referencia" required>
+
+            <label class="lab" for="cantidad">Cantidad del Lote:</label>
+            <input class="inp" type="number" id="cantidad" name="cantidad" required>
+
+            <label class="lab" for="tallas">Tallas del Lote (ej: S, M, L):</label>
+            <input class="inp" type="text" id="tallas" name="tallas" required>
+
+            <label class="lab" for="fecha_entrada">Fecha de Entrada:</label>
+            <input class="inp" type="date" id="fecha_entrada" min="2024-01-01" max="" name="fecha_entrada" required>
+
+            <label class="lab" for="completo">Lote Completo?</label>
+            <input class="inp" type="checkbox" id="completo" name="completo" value="1" required>
+
+            <button class="botformulario" type="submit">Guardar Lote</button>
+        </form>
+
+        <button class="botformulario" onclick="document.getElementById('formDialog').close();">Cerrar</button>
+    </dialog>
+
+    <div class="tabla-ejemplo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Lote</th>
+                    <th>Referencia</th>
+                    <th>Cantidad/Talla</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Falda</td>
+                    <td>L2345</td>
+                    <td>32(55) 34(104) 36(200) 38(49)</td>
+                </tr>
+                <tr>
+                    <td>Pant Largo beige</td>
+                    <td>K456</td>
+                    <td>8(30) 10(12) 12(44)</td>
+                </tr>
+                <tr>
+                    <td>Short Dama</td>
+                    <td>D0987</td>
+                    <td>S(44) M(34) L(88) XL(56)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+<script>
+        document.getElementById("fecha_entrada").max = new Date().toISOString().split("T")[0];
+</script>
+</html>
